@@ -1,4 +1,8 @@
-app-setup
+App Setup
 =========
 
-My favourite stack - AngularJS, Sass, CI (php), MongoDB, Grunt
+App prototyping setup - AngularJS, Sass, CI (php), MongoDB, Grunt
+
+Codeigniter backend sits in an API folder, as all app logic done on frontend.
+
+Grunt used to compile, test and deploy app.

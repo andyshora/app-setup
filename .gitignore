@@ -1,5 +1,4 @@
-*/config/development
-*/logs/log-*.php
-*/logs/!index.html
-*/cache/*
-*/cache/!index.html
+*.tmp
+*.log
+*.cache
+*.DS_Store

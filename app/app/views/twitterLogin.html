@@ -2,18 +2,18 @@
 	<p>Twitter Login</p>
 	<p>authState: {{authState}}</p>
 	<div class="nav-logged-out" ng-show="authState=='checking-login'">
-		<button class="tca-btn-blue">Just checking your login status...</button>
+		<a class="tca-btn-blue">Just checking your login status...</a>
 	</div>
 	<div class="nav-logged-out" ng-show="authState=='logged-out'">
-		<button class="tca-btn-blue" ng-click="login()">Login with Twitter</button>
+		<a href="/api/index.php/auth/oauth/twitter" class="tca-btn-blue">Login with Twitter</a>
 	</div>
 	<div class="nav-logging-in" ng-show="authState=='logging-in'">
-		<button class="tca-btn-blue">Logging in...</button>
+		<a class="tca-btn-blue">Logging in...</a>
 	</div>
 	<div class="nav-need-auth" ng-show="authState=='awaiting-auth'">
-		<button class="tca-btn-blue">Waiting for authorization...</button>
+		<a class="tca-btn-blue">Waiting for authorization...</a>
 	</div>
 	<div class="nav-logged-in" ng-show="authState=='logged-in'">
-		<button class="tca-btn-blue">Logged in successfully.</button>
+		<a class="tca-btn-blue">Logged in successfully.</a>
 	</div>
 </div>

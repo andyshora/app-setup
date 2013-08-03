@@ -24,6 +24,14 @@ if ( ! function_exists('vmid'))
 		return (strlen($id) == 24);
     }
 }
+if ( ! function_exists('app_url'))
+{
+	function app_url()
+	{
+		$CI =& get_instance();
+		return $CI->config->item('app_url');
+	}
+}
 
 
 

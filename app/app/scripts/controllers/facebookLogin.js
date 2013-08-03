@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('newappApp').controller('LoginCtrl', function (Facebook, $scope, $rootScope, $http, $location) {
+angular.module('newappApp').controller('FacebookLoginCtrl', function (Facebook, $scope, $rootScope, $http, $location) {
 
 	var	CHECKING_LOGIN = 'checking-login',
 		LOGGED_OUT = 'logged-out',

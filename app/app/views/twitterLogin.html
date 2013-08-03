@@ -1,0 +1,18 @@
+<div>
+	<p>Twitter Login</p>
+	<div class="nav-logged-out" ng-show="authState=='checking-login'">
+		<button class="tca-btn-blue">Just checking your login status...</button>
+	</div>
+	<div class="nav-logged-out" ng-show="authState=='logged-out'">
+		<button class="tca-btn-blue" ng-click="login()">Login with Twitter</button>
+	</div>
+	<div class="nav-logging-in" ng-show="authState=='logging-in'">
+		<button class="tca-btn-blue">Logging in...</button>
+	</div>
+	<div class="nav-need-auth" ng-show="authState=='awaiting-auth'">
+		<button class="tca-btn-blue">Waiting for authorization...</button>
+	</div>
+	<div class="nav-logged-in" ng-show="authState=='logged-in'">
+		<button class="tca-btn-blue">Logged in successfully.</button>
+	</div>
+</div>

@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('TwitterProvider', []);
+var app = angular.module('LoginProvider', []);
 app.factory('Twitter', function ($rootScope, $q) {
 
 	var self = this,

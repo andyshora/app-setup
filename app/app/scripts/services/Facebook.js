@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('FacebookProvider', []);
+var app = angular.module('LoginProvider', []);
 app.factory('Facebook', function ($rootScope, $q) {
 
 	var self = this;

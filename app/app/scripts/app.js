@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('newappApp', [])
+angular.module('newappApp', ['LoginProvider'])
 	.config(function ($routeProvider, $locationProvider) {
 
 	$locationProvider.html5Mode(true);

@@ -18,7 +18,7 @@ read dev
 if [ "$dev" == "y" ]; then
 	echo "Enter dev domain, e.g. dev.myapp.com"
 	read domain
-	find . -type f -name "Gruntfile.js" -print0 | xargs -0 sed -i '.bak' -e "s/localhost/$domain/g"
+	find . -type f -name "Gruntfile.js" -print0 | xargs -0 sed -i '.bak' -e "s/dev\.app-setup\.com/$domain/g"
 	echo  "Do you want to add this new dev domain to your hosts file? (y/n)"
 	read add
 	if [ "$add" == "y" ]; then

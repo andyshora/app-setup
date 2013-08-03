@@ -1,20 +1,20 @@
-<div>
+<nav>
 	<p>Twitter Login</p>
 	<p>authState: {{authState}}</p>
 	<div class="nav-logged-out" ng-show="authState=='checking-login'">
-		<a class="tca-btn-blue">Just checking your login status...</a>
+		<a>Just checking your login status...</a>
 	</div>
 	<div class="nav-logged-out" ng-show="authState=='logged-out'">
-		<a ng-href="/api/index.php/auth/oauth/twitter{{ loginQueryString }}" ng-click="showLoginState()" target="_self" class="tca-btn-blue">Login with Twitter</a>
+		<a ng-href="/api/index.php/auth/oauth/twitter{{ loginQueryString }}" ng-click="showLoginState()" target="_self">Login with Twitter</a>
 	</div>
 	<div class="nav-logging-in" ng-show="authState=='logging-in'">
-		<a class="tca-btn-blue">Logging in...</a>
+		<a>Logging in...</a>
 	</div>
 	<div class="nav-need-auth" ng-show="authState=='awaiting-auth'">
-		<a class="tca-btn-blue">Waiting for authorization...</a>
+		<a>Waiting for authorization...</a>
 	</div>
 	<div class="nav-logged-in" ng-show="authState=='logged-in'">
-		<a class="tca-btn-blue">Logged in successfully.</a>
+		<a>Logged in successfully.</a>
 		<a ng-href="/api/index.php/auth/logout" target="_self">Logout</a>
 	</div>
-</div>
+</nav>

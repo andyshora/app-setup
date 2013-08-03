@@ -14,7 +14,25 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'api';
+$config['base_url']	= 'http://dev.app-setup.com/api';
+
+if (defined('ENVIRONMENT'))
+{
+	switch (ENVIRONMENT)
+	{
+		case 'development':
+			$config['base_url']	= 'http://dev.app-setup.com/api';
+		break;
+		case 'testing':
+			$config['base_url']	= 'http://test.app-setup.com/api';
+		break;
+		case 'production':
+			$config['base_url']	= 'http://app-setup.com/api';
+		break;
+		default:
+			exit('The application environment is not set correctly.');
+	}
+}
 
 /*
 |--------------------------------------------------------------------------

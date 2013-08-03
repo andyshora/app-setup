@@ -6,7 +6,7 @@ class Api extends CI_Controller {
 
 	public function index()
 	{
-		echo json_encode($this->_tempData);
+		echo "Oh hai.";
 	}
 	public function search($query='') {
 		$ll = /*$this->input->post('ll') | */'51.538851799999996,-0.0758134';

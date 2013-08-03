@@ -23,7 +23,7 @@ if [ "$dev" == "y" ]; then
 	read add
 	if [ "$add" == "y" ]; then
 		cp /etc/hosts ~/hosts.bak
-		sudo bash -c 'sudo echo "127.0.0.1	$domain" >> /etc/hosts'
+		sudo bash -c "sudo echo '127.0.0.1	'$domain >> /etc/hosts"
 	fi
 	echo "Done."
 fi

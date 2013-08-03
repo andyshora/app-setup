@@ -8,10 +8,15 @@ class Auth extends CI_Controller
 
         $this->load->spark('oauth/0.3.1');
 
-        // Create an consumer from the config
+        $this->load->config('oauth');
+
+        $keys = $this->config->item('keys');
+        $secrets = $this->config->item('secrets');
+
+        // Create an OAuth consumer from the config
         $consumer = $this->oauth->consumer(array(
-            'key' => $config['key'],
-            'secret' => $config['secret'],
+            'key' => $keys[$provider],
+            'secret' => $secrets[$provider]
         ));
 
         // Load the provider

@@ -100,7 +100,6 @@ class Auth extends CI_Controller
 
 				$this->mongo_db->clear();
 
-				unset($user['friends']);
 				$this->session->set_userdata($user);
 
 			} else {
@@ -116,7 +115,6 @@ class Auth extends CI_Controller
 
 				$this->session->set_userdata($arr);
 			}
-
 
 
 			$session_data = $this->session->all_userdata();

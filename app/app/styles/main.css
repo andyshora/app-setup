@@ -1,1 +1,5 @@
-/* Will be compiled down to a single stylesheet with your sass files */
+/* line 1, main.scss */
+body {
+  background: grey;
+  color: black;
+}

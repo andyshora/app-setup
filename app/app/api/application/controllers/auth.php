@@ -125,7 +125,6 @@ class Auth extends CI_Controller
 	public function session()
 	{
 		$session_data = $this->session->all_userdata();
-
 		die(json_encode($session_data));
 	}
 	public function get_user() {

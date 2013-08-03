@@ -130,6 +130,11 @@ class Auth extends CI_Controller
 
 		die(json_encode($session_data));
 	}
+	public function get_user() {
+		$session_data = $this->session->all_userdata();
+
+		die(json_encode($session_data));
+	}
 	public function logout()
 	{
 		$this->session->sess_destroy();

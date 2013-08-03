@@ -5,7 +5,7 @@
 		<a class="tca-btn-blue">Just checking your login status...</a>
 	</div>
 	<div class="nav-logged-out" ng-show="authState=='logged-out'">
-		<a href="/api/index.php/auth/oauth/twitter" class="tca-btn-blue">Login with Twitter</a>
+		<a href="/api/index.php/auth/oauth/twitter" class="tca-btn-blue" ng-click="showLoginState()">Login with Twitter</a>
 	</div>
 	<div class="nav-logging-in" ng-show="authState=='logging-in'">
 		<a class="tca-btn-blue">Logging in...</a>

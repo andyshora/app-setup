@@ -3,7 +3,7 @@
 describe('Controller: FacebookLoginCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('newappApp'));
+  beforeEach(module('rocketTweetsApp'));
 
   var FacebookLoginCtrl,
     scope;

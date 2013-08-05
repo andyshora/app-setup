@@ -3,3 +3,5 @@
 *.cache
 *.DS_Store
 *.bak
+app/app/api/application/config/mongo_db.php
+app/app/api/application/config/oauth.php

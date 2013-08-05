@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('newappApp', ['LoginProvider'])
+angular.module('rocketTweetsApp', ['LoginProvider'])
 	.config(function ($routeProvider, $locationProvider) {
 
 	$locationProvider.html5Mode(true);

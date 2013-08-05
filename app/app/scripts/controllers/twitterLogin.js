@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('newappApp')
+angular.module('rocketTweetsApp')
 	.controller('TwitterLoginCtrl', function ($scope, $http, $location) {
 		$scope.authState = 'checking-login';
 

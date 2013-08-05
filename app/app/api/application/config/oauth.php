@@ -1,4 +1,5 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-$config['keys']['twitter'] = 'YOUR_API_KEY';
-$config['secrets']['twitter'] = 'YOUR_API_SECRET';
+//oauth
+$config['keys']['twitter'] = '4OE7g0bbmVzP7BXEZmdFw';
+$config['secrets']['twitter'] = 'BGUo9Q3NYagVpByWeSyPVdz2E5bUwiPo8wgmYqZNKQ';

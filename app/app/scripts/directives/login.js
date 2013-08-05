@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('newappApp')
+angular.module('rocketTweetsApp')
 	.directive('login', function () {
 		return {
 			templateUrl: 'views/twitterLogin.html', // twitterLogin / facebookLogin

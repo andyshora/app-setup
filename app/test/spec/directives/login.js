@@ -1,7 +1,7 @@
 'use strict';
 
 describe('Directive: login', function () {
-  beforeEach(module('newappApp'));
+  beforeEach(module('rocketTweetsApp'));
 
   var element;
 
